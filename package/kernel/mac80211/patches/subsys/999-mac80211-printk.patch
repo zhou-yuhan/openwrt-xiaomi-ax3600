@@ -1,0 +1,11 @@
+--- a/net/mac80211/main.c
++++ b/net/mac80211/main.c
+@@ -1550,6 +1550,8 @@ static int __init ieee80211_init(void)
+ 	if (ret)
+ 		goto err_netdev;
+ 
++	pr_info("printk info\n");
++
+ 	return 0;
+  err_netdev:
+ 	rc80211_minstrel_exit();

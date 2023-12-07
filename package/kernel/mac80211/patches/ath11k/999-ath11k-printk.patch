@@ -1,0 +1,11 @@
+--- a/drivers/net/wireless/ath/ath11k/ahb.c
++++ b/drivers/net/wireless/ath/ath11k/ahb.c
+@@ -1228,6 +1228,8 @@ static int ath11k_ahb_probe(struct platf
+ 
+ 	ath11k_ahb_fwreset_from_cold_boot(ab);
+ 
++	ath11k_info(ab, "ath11k probe success\n");
++
+ 	return 0;
+ 
+ err_ce_free:
